@@ -44,21 +44,16 @@ def add_note():
 
 
 def view_notes():
-    note = input("Note to search (title): ").lower()
 
     try: 
         with open("data/notes.json", "r") as file:
             data = json.load(file)
  
         for item in data:
-            if item["title"] == note:
                 print(f"\nTitle: {item["title"]}")
                 print(f"Description: {item["description"]}")
                 print(f"Date: {item["date"]}")
                 print(f"Due date: {item["due date"]}\n")
-                break
-        else:
-            print("\nNote not found\n")
 
     except FileNotFoundError:
         print("The note files does not exist.\n")

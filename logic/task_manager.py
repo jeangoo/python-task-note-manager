@@ -43,26 +43,22 @@ def add_task():
 
 
 def view_tasks():
-    task = input("Note to search (title): ").lower()
+
 
     try: 
         with open("data/tasks.json", "r") as file:
             data = json.load(file)
  
         for item in data:
-            if item["title"] == task:
                 print(f"\nTitle: {item["title"]}")
                 print(f"Description: {item["description"]}")
                 print(f"Date: {item["date"]}")
                 print(f"Due date: {item["due date"]}\n")
-                break
-        else:
-            print("\nNote not found\n")
 
     except FileNotFoundError:
-        print("The note files does not exist.\n")
+        print("\nThe note files does not exist.\n")
     except json.JSONDecodeError:
-         print("The notes file is corrupted or empty.\n")
+         print("\nThe notes file is corrupted or empty.\n")
 
 
 def delete_task():

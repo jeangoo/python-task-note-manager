@@ -1,7 +1,6 @@
 # 📝 Python Task & Note Manager
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Status](https://img.shields.io/badge/status-Active-success)]()
 [![Made with ❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)]()
 
